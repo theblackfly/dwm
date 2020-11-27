@@ -3,16 +3,17 @@
 .SHIFT_LIST 10p
 ..
 .PARA_SPACE 1m
-.TITLE "\s+(10A Friendly Guide to LARBS!\s0"
-.AUTHOR "\s+5Luke Smith\s0"
+.TITLE "\s+(10Blackfly LARBS - Manual\s0"
+.AUTHOR "\s+5Jensun Ravichandran\s0"
 .DOCTYPE    DEFAULT
 .COPYSTYLE  FINAL
 .PRINTSTYLE TYPESET
 .PT_SIZE 12
 .START
+This manual is for Blackfly's fork of Luke Smith's LARBS ecosystem.
 Use vim keys (\f(CWh/j/k/l\fP) to navigate this document.
 Pressing \f(CWs\fP will fit it to window width (\f(CWa\fP to revert).
-\f(CWK\fP and \f(CWJ\fP zoom in and out.
+\f(CW<C-i>\fP and \f(CW<C-o>\fP zoom in and out.
 \f(CWSuper+f\fP to toggle fullscreen.
 \f(CWq\fP to quit.
 (These are general binds set for \fBzathura\fP, the pdf reader.)
