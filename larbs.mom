@@ -327,7 +327,9 @@ mpd is controlled by ncmpcpp, which is accessible by \f(CWMod+m\fP.
 .PP
 You can do this with CUPS. Simply navigate to
 .PDF_WWW_LINK "http://localhost:631/" "http://localhost:631/admin"
-from your web browser and add your printer by following the instructions there. If the page does not show up, you will need to start CUPS with the command \f(CWsudo systemctl start cups.service\fP.
+from your web browser and add your printer by following the instructions there. If the page does not show up, you will need to start CUPS with the command \f(CWsudo systemctl start cups.service\fP. If you need to download a suitable PPD file for your printer, try looking for it in
+.PDF_WWW_LINK "https://openprinting.github.io/" "https://openprinting.github.io/"
+first.
 .HEADING 2 "How do I update LARBS?"
 .PP
 LARBS is deployed as a git repository in your home directory.
