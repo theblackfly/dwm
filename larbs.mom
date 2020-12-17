@@ -343,7 +343,7 @@ from your web browser and add your printer by following the instructions there. 
 first.
 .HEADING 2 "How do I update LARBS?"
 .PP
-LARBS is deployed as a git repository in your home directory.
+LARBS is clones as a git repository under \f(CW~/voidrice\fP and deployed in your home directory.
 You can use it as such to fetch, diff and merge changes from the remote repository.
 If you don't want to do that or don't know how to use git, you can actually just rerun the script (as root) and reinstall LARBS and it will automatically update an existing install if you select the same username.
 This will overwrite the original config files though, including changes you made for them, but this is an easier brute force approach that will also install any new dependencies.
