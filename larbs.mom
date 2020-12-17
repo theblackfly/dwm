@@ -152,7 +152,7 @@ To type capital letters, hold down the \f(CWShift\fP key\(emthat might sound lik
 .ITEM
 \f(CWMod+R\fP \(en htop (task manager, system monitor that R*dditors use to look cool)
 .ITEM
-\f(CWMod+e\fP \(en neomutt (email) \(en Must be first configured by running \f(CWmw add\fP.
+\f(CWMod+e\fP \(en neomutt (email) \(en Must be first configured by running \f(CWmw -a your@email.com\fP.
 .ITEM
 \f(CWMod+E\fP \(en abook (contacts, addressbook, emails)
 .ITEM
@@ -189,7 +189,7 @@ To type capital letters, hold down the \f(CWShift\fP key\(emthat might sound lik
 .ITEM
 \f(CWMod+F7\fP \(en Toggle on/off transmission client via dmenu
 .ITEM
-\f(CWMod+F8\fP \(en Check mail, if mutt-wizard is configured. (Run \f(CWmw add\fP to set up.)
+\f(CWMod+F8\fP \(en Check mail, if mutt-wizard is configured. (Run \f(CWmw -a your@email.com\fP to set up.)
 .ITEM
 \f(CWMod+F9\fP \(en Mount a USB drive/hard drive or Android
 .ITEM
@@ -232,7 +232,7 @@ I use ncmpcpp as a music player, which is a front end for mpd.
 .ITEM
 \f(CWMod+F4\fP \(en pulsemixer (general audio/volume sink/source control)
 .LIST OFF
-.HEADING 2 "Tags/Workspaces"
+.HEADING 2 "Tags/Workspaces/Monitors"
 .PP
 There are nine tags, active tags are highlighted in the top left.
 .LI
@@ -243,13 +243,21 @@ There are nine tags, active tags are highlighted in the top left.
 .ITEM
 \f(CWMod+Tab\fP \(en Go to previous tag (may also use \f(CW\\\fP for Tab)
 .ITEM
-\f(CWMod+g\fP \(en Go to left tag (hold shift to send window there)
+\f(CWMod+g\fP \(en Go to left tag
 .ITEM
-\f(CWMod+;\fP \(en Go to right tag (hold shift to send window there)
+\f(CWMod+;\fP \(en Go to right tag
 .ITEM
-\f(CWMod+Left\fP \(en Move to workspace to the left
+\f(CWMod+Shift+g\fP \(en Send window to left tag
 .ITEM
-\f(CWMod+Right\fP \(en Move to workspace to the right
+\f(CWMod+Shift+;\fP \(en Send window to right tag
+.ITEM
+\f(CWMod+Left\fP \(en Go to workspace/monitor to the left
+.ITEM
+\f(CWMod+Right\fP \(en Go to workspace/monitor to the right
+.ITEM
+\f(CWMod+Shift+Left\fP \(en Go to workspace/monitor to the "left"
+.ITEM
+\f(CWMod+Shift+Right\fP \(en Go to workspace/monitor to the "right"
 .LIST OFF
 .HEADING 2 "Recording"
 .PP
@@ -291,6 +299,9 @@ These settings may override your preferred settings, so you should open this fil
 .PP
 On fresh install, the Linux audio system often mutes outputs.
 You may also need to set your preferred default output sink which you can do by the command line, or by selecting one with \f(CWpulsemixer\fP (\f(CWMod+F4\fP).
+.HEADING 2 "My battery does not show up in the statusbar!"
+.PP
+You probably have to edit \f(CW~/.local/bin/statusbar/battery\fP and replace \f(CWBAT?\fP with what the name you find by doing \f(CWls /sys/class/power_supply/\fP.
 .HEADING 2 "How do I copy and paste?"
 .PP
 Copying and pasting is always program-specific on any system.
@@ -311,15 +322,15 @@ Or, if you want to use \f(CWwal\fP to automatically generate colorschemes from y
 .HEADING 2 "How do I set up my email?"
 .PP
 LARBS comes with mutt-wizard, which gives the ability to receive and send all your email and keep an offline store of it all in your terminal, without the need for browser.
-You can add email accounts by running \f(CWmw add\fP.
+You can add email accounts by running \f(CWmw -a your@email.com\fP.
 .PP
 Once you have successfully added your email address(es), you can open your mail with \f(CWneomutt\fP which is also bound to \f(CWMod+e\fP.
 You can sync your mail by pressing \f(CWMod+F8\fP and you can set a cronjob to sync mail every several minutes by running \f(CWmw cron\fP.
 .PP
-You may also want to install \f(CWpam-gnupg-git\fP, which can be set up to automatically unlock your GPG key on login, which will allow you avoid having put in a password to sync and send, all while keeping your password safe and encypted on your machine.
+You may also want to install \f(CWpam-gnupg\fP, which can be set up to automatically unlock your GPG key on login, which will allow you avoid having put in a password to sync and send, all while keeping your password safe and encypted on your machine.
 .HEADING 2 "How do I set up my music?"
 .PP
-By default, mpd, the music daemon assumes that \f(CW~/Music\fP is your music directory.
+By default, mpd, the music daemon assumes that \f(CW~/music\fP is your music directory.
 This can be changed in \f(CW~/.config/mpd/mpd.conf\fP.
 When you add music to your music folder, you may have to run \f(CWmpc up\fP in the terminal to update the database.
 mpd is controlled by ncmpcpp, which is accessible by \f(CWMod+m\fP.
