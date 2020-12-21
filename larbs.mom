@@ -341,6 +341,9 @@ You can do this with CUPS. Simply navigate to
 from your web browser and add your printer by following the instructions there. If the page does not show up, you will need to start CUPS with the command \f(CWsudo systemctl start cups.service\fP. If you need to download a suitable PPD file for your printer, try looking for it in
 .PDF_WWW_LINK "https://openprinting.github.io/" "https://openprinting.github.io/"
 first.
+.HEADING 2 "How do I change the cursor size?"
+.PP
+You can achieve this by setting the \f(CWXcursor.size\fP parameter in \f(CW~/.config/Xresources\fP.
 .HEADING 2 "How do I update LARBS?"
 .PP
 LARBS is clones as a git repository under \f(CW~/voidrice\fP and deployed in your home directory.
