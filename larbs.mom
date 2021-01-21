@@ -259,6 +259,18 @@ There are nine tags, active tags are highlighted in the top left.
 .ITEM
 \f(CWMod+Shift+Right\fP \(en Go to workspace/monitor to the "right"
 .LIST OFF
+.HEADING 2 "Notifications"
+.PP
+Notifications are handled by dunst. The configuration file for it is located
+at \f(CW~/.config/dunst/dunstrc\fP.
+.LI
+.ITEM
+\f(CWCtrl+Space\fP \(en Discard latest notification
+.ITEM
+\f(CWCtrl+Shift+Space\fP \(en Discard all notifications
+.ITEM
+\f(CWCtrl+`\fP \(en Redisplay last notification
+.LIST OFF
 .HEADING 2 "Recording"
 .PP
 I use maim and ffmpeg to make different recordings of the desktop and audio.
