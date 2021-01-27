@@ -359,6 +359,9 @@ You can do this with the \f(CWbluetoothctl\fP command-line utility. If the utili
 .HEADING 2 "How do I change the cursor size?"
 .PP
 You can achieve this by setting the \f(CWXcursor.size\fP parameter in \f(CW~/.config/Xresources\fP.
+.HEADING 2 "How do I change the font size in the terminal on the fly?"
+.PP
+Increasing and decreasing the font size in the terminal (st) is bound to \f(CWAlt+Shift+k\fP and \f(CWAlt+Shift+j\fP respectively.
 .HEADING 2 "How do I update LARBS?"
 .PP
 LARBS is clones as a git repository under \f(CW~/voidrice\fP and deployed in your home directory.
