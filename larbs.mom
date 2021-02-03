@@ -116,7 +116,7 @@ To type capital letters, hold down the \f(CWShift\fP key\(emthat might sound lik
 .ITEM
 \f(CWMod+s\fP \(en Make/unmake a window "sticky" (follows you from tag to tag)
 .ITEM
-\f(CWMod+b\fP \(en Toggle statusbar (may also middle click on desktop)
+\f(CWMod+B\fP \(en Toggle statusbar (may also middle click on desktop)
 .ITEM
 \f(CWMod+v\fP \(en Jump to master window
 .LIST OFF
@@ -156,13 +156,13 @@ To type capital letters, hold down the \f(CWShift\fP key\(emthat might sound lik
 .ITEM
 \f(CWMod+E\fP \(en abook (contacts, addressbook, emails)
 .ITEM
-\f(CWMod+m\fP \(en ncmpcpp (music player)
+\f(CWMod+m\fP \(en enters volume controls mode (exit with \f(CWEscape\fP)
 .ITEM
 \f(CWMod+w\fP \(en Web browser (Brave by default)
 .ITEM
 \f(CWMod+W\fP \(en nmtui (for connecting to wireless internet)
 .ITEM
-\f(CWMod+n\fP \(en vimwiki (for notes)
+\f(CWMod+n\fP \(en enters screen brighness mode (exit with \f(CWEscape\fP)
 .ITEM
 \f(CWMod+N\fP \(en newsboat (RSS feed reader)
 .ITEM
@@ -206,7 +206,7 @@ To type capital letters, hold down the \f(CWShift\fP key\(emthat might sound lik
 I use ncmpcpp as a music player, which is a front end for mpd.
 .LI
 .ITEM
-\f(CWMod+m\fP \(en ncmpcpp, the music player
+\f(CWMod+m,n\fP \(en ncmpcpp, the music player
 .ITEM
 \f(CWMod+.\fP \(en Next track
 .ITEM
@@ -359,6 +359,9 @@ You can do this with the \f(CWbluetoothctl\fP command-line utility. If the utili
 .HEADING 2 "How do I change the cursor size?"
 .PP
 You can achieve this by setting the \f(CWXcursor.size\fP parameter in \f(CW~/.config/Xresources\fP.
+.HEADING 2 "How do I spawn programs on startup?"
+.PP
+You can achieve this by editing the \f(CW~/.xprofile\fP file.
 .HEADING 2 "How do I change the font size in the terminal on the fly?"
 .PP
 Increasing and decreasing the font size in the terminal (st) is bound to \f(CWAlt+Shift+k\fP and \f(CWAlt+Shift+j\fP respectively.
