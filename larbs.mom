@@ -156,13 +156,13 @@ To type capital letters, hold down the \f(CWShift\fP key\(emthat might sound lik
 .ITEM
 \f(CWMod+E\fP \(en abook (contacts, addressbook, emails)
 .ITEM
-\f(CWMod+m\fP \(en enters volume controls mode (exit with \f(CWEscape\fP)
+\f(CWMod+m\fP \(en enters volume controls mode (increase/decrease volume with \f(CWk\fP)/\f(CWj\fP), exit with \f(CWq\fP)
 .ITEM
 \f(CWMod+w\fP \(en Web browser (Brave by default)
 .ITEM
 \f(CWMod+W\fP \(en nmtui (for connecting to wireless internet)
 .ITEM
-\f(CWMod+n\fP \(en enters screen brighness mode (exit with \f(CWEscape\fP)
+\f(CWMod+n\fP \(en enters screen brightness mode (increase/decrease brightness with \f(CWk\fP)/\f(CWj\fP), exit with \f(CWq\fP)
 .ITEM
 \f(CWMod+N\fP \(en newsboat (RSS feed reader)
 .ITEM
