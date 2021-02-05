@@ -156,13 +156,9 @@ To type capital letters, hold down the \f(CWShift\fP key\(emthat might sound lik
 .ITEM
 \f(CWMod+E\fP \(en abook (contacts, addressbook, emails)
 .ITEM
-\f(CWMod+m\fP \(en enters volume controls mode (increase/decrease volume with \f(CWk\fP)/\f(CWj\fP), exit with \f(CWq\fP)
-.ITEM
 \f(CWMod+w\fP \(en Web browser (Brave by default)
 .ITEM
 \f(CWMod+W\fP \(en nmtui (for connecting to wireless internet)
-.ITEM
-\f(CWMod+n\fP \(en enters screen brightness mode (increase/decrease brightness with \f(CWk\fP)/\f(CWj\fP), exit with \f(CWq\fP)
 .ITEM
 \f(CWMod+N\fP \(en newsboat (RSS feed reader)
 .ITEM
@@ -171,6 +167,19 @@ To type capital letters, hold down the \f(CWShift\fP key\(emthat might sound lik
 \f(CWMod+Shift+Enter\fP \(en Show/hide dropdown terminal
 .ITEM
 \f(CWMod+'\fP \(en Show/hide dropdown calculator
+.LIST OFF
+.HEADING 2 "Quick access modes"
+.PP
+The motivation for these modes is to use key-sequences instead of key-chords. This is heavily insipired by the
+.PDF_WWW_LINK "https://www.spacemacs.org" "spacemacs"
+configuration framework for emacs. Some of the following modes are "sticky". This means that once you enter the mode, you have to explicitly leave the mode after you're done using it. If you use spacemacs, this is similar to the "transient" mode there.
+There are, of course, other keybindings to control things like volume and brightness. But, why go through all that trouble if you can achieve it without having to leave the homerow?
+To modify these keybindings (and add more), edit the \f(CW~/.config/sxhkd/sxhkdrc\fP file.
+.LI
+.ITEM
+\f(CWMod+m\fP \(en Enters volume controls mode (increase/decrease volume with \f(CWk\fP/\f(CWj\fP, exit with \f(CWq\fP)
+.ITEM
+\f(CWMod+n\fP \(en Enters screen brightness mode (increase/decrease brightness with \f(CWk\fP/\f(CWj\fP, exit with \f(CWq\fP)
 .LIST OFF
 .HEADING 2 "System"
 .LI
