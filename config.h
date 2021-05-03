@@ -225,10 +225,16 @@ static Key keys[] = {
 	{ MODKEY,			XK_period,	spawn,		SHCMD("mpc next") },
 	{ MODKEY|ShiftMask,		XK_period,	spawn,		SHCMD("mpc repeat") },
 
-	{ MODKEY,			XK_Left,	focusmon,	{.i = -1 } },
-	{ MODKEY|ShiftMask,		XK_Left,	tagmon,		{.i = -1 } },
-	{ MODKEY,			XK_Right,	focusmon,	{.i = +1 } },
-	{ MODKEY|ShiftMask,		XK_Right,	tagmon,		{.i = +1 } },
+  /* Additional monitors */
+	/* { MODKEY,			XK_Left,	focusmon,	{.i = -1 } }, */
+	/* { MODKEY|ShiftMask,		XK_Left,	tagmon,		{.i = -1 } }, */
+	/* { MODKEY,			XK_Right,	focusmon,	{.i = +1 } }, */
+	/* { MODKEY|ShiftMask,		XK_Right,	tagmon,		{.i = +1 } }, */
+  /* The arrow is just way to far. Might as well use the mouse then. */
+	{ MODKEY,			XK_c,	focusmon,	{.i = -1 } },
+	{ MODKEY,			XK_v,	focusmon,	{.i = +1 } },
+	{ MODKEY|ShiftMask,		XK_c,	tagmon,		{.i = -1 } },
+	{ MODKEY|ShiftMask,		XK_v,	tagmon,		{.i = +1 } },
 
 	{ MODKEY,			XK_Page_Up,	shiftview,	{ .i = -1 } },
 	{ MODKEY|ShiftMask,		XK_Page_Up,	shifttag,	{ .i = -1 } },

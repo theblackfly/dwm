@@ -260,13 +260,13 @@ There are nine tags, active tags are highlighted in the top left.
 .ITEM
 \f(CWMod+Shift+;\fP \(en Send window to right tag
 .ITEM
-\f(CWMod+Left\fP \(en Go to workspace/monitor to the left
+\f(CWMod+c\fP \(en Go to workspace/monitor to the "left"
 .ITEM
-\f(CWMod+Right\fP \(en Go to workspace/monitor to the right
+\f(CWMod+v\fP \(en Go to workspace/monitor to the "right"
 .ITEM
-\f(CWMod+Shift+Left\fP \(en Go to workspace/monitor to the "left"
+\f(CWMod+Shift+c\fP \(en Send window to workspace/monitor to the "left"
 .ITEM
-\f(CWMod+Shift+Right\fP \(en Go to workspace/monitor to the "right"
+\f(CWMod+Shift+v\fP \(en Send window to workspace/monitor to the "right"
 .LIST OFF
 .HEADING 2 "Notifications"
 .PP
