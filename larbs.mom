@@ -377,6 +377,9 @@ You can achieve this by editing the \f(CW~/.xprofile\fP file.
 .HEADING 2 "How do I change the font size in the terminal on the fly?"
 .PP
 Increasing and decreasing the font size in the terminal (st) is bound to \f(CWAlt+Shift+k\fP and \f(CWAlt+Shift+j\fP respectively.
+.HEADING 2 "How do I fix incorrect time/system clock?"
+.PP
+First run \f(CWsudo tzupdate\fP to automatically set your timezone based on the geolocation of your IP and then run \f(CWsudo ntpd -qg\fP to manually synchronize your clock with the network. \f(CWsudo hwclock --systohc\fP will write the current software UTC time to the hardware clock.
 .HEADING 2 "How do I update LARBS?"
 .PP
 LARBS is clones as a git repository under \f(CW~/voidrice\fP and deployed in your home directory.
