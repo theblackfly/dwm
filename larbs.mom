@@ -65,7 +65,7 @@ Below in this document, there is information about where to change programs/comp
 .PP
 Additionally, while this isn't a part of the desktop environment, the default editing mode in the shell is using vi bindings.
 If you want to learn more of this, run \f(CWMod+F2\fP and type and select the option for "vi mode in shell".
-This setting can be changed if you don't like it by deleting or commenting out the contents of \f(CW~/.config/inputrc\fP.
+This setting can be changed if you don't like it by deleting or commenting out the contents of \f(CW~/.config/shell/inputrc\fP.
 .HEADING 2 "The Status Bar"
 .PP
 To the left, you'll see the numbers of your current workspace/tag(s).
@@ -206,6 +206,8 @@ To modify these keybindings (and add more), edit the \f(CW~/.config/sxhkd/sxhkdr
 .ITEM
 \f(CWMod+F11\fP \(en View webcam
 .ITEM
+\f(CWMod+F12\fP \(en Rerun kayboard mapping scripts if new keyboard is attached
+.ITEM
 \f(CWMod+`\fP \(en Select an emoji to copy to clipboard
 .ITEM
 \f(CWMod+Insert\fP \(en Show contents of clipboard/primary selection
@@ -306,11 +308,14 @@ buttons, screen brightness, email, web browsing buttons, etc.) to what you
 would expect.
 .HEADING 1 "Configuration"
 .PP
-Dotfiles/settings files are located in \f(CW~/.config/\fP, note that dotfiles to programs not included in LARBS are there as well by requests of users. I do not necessarily maintain all these dotfiles, but they remain as legacy.
+Dotfiles/settings files are located in \f(CW~/.config/\fP.
 .PP
-Suckless programs, dwm (the window manager), st (the terminal) and dmenu among others do not have traditional config files, but have their source code location in \f(CW~/.local/src/\fP.
-There you can modify their \f(CWconfig.h\fP files, then \f(CWsudo make install\fP to reinstall.
-(You'll have to restart the program to see its effects obviously.)
+Suckless programs, dwm (the window manager), st (the terminal) and dmenu among others do not have traditional config files, but have their source code location in \f(CW~/.local/src/\fP (press \f(CWrr\fP to jump to that directory).
+There you can modify their \f(CWconfig.h\fP files or other source code, then \f(CWsudo make install\fP to reinstall.
+.PP
+vim is set to automatically recompile and install these programs whenever you save changes to any \f(CWconfig.h\fP file
+(compilation will be nearly instantaneous).
+You'll have to restart the program to see its effects obviously.
 .HEADING 1 "Frequently Asked Questions (FAQs)"
 .HEADING 2 "My keyboard isn't working as expected!"
 .PP
@@ -334,19 +339,20 @@ Additionally, I've set vim to use the clipboard as the default buffer, which mea
 .PP
 The system will always read the file \f(CW~/.config/wall.png\fP as the wallpaper.
 The script \f(CWsetbg\fP, if run on an image will set it as the persistent background.
-When using the file manager, you can simply hover over an image name and type \f(CWbg\fP and this will run \f(CWsetbg\fP.
+When using the file manager, you can simply hover over an image name and type \f(CWb\fP and this will run \f(CWsetbg\fP.
 .HEADING 2 "How I change the colorscheme?"
 .PP
-LARBS no longer deploys Xresource by default, but check \f(CW~/.config/Xresources\fP for a list of color schemes you can activate or add your own. When you save the file, vim will automatically update the colorscheme. If you'd like these colors activated by default on login, there is a line in \f(CW~/.config/xprofile\fP you can uncomment to allow that.
+LARBS no longer deploys Xresources by default, but check \f(CW~/.config/x11/xresources\fP for a list of color schemes you can activate or add your own. When you save the file, vim will automatically update the colorscheme. If you'd like these colors activated by default on login, there is a line in \f(CW~/.config/x11/xprofile\fP you can uncomment to allow that.
 .PP
 Or, if you want to use \f(CWwal\fP to automatically generate colorschemes from your wallpapers, just install it and \f(CWsetbg\fP will automatically detect and run it on startup and wallpaper change.
 .HEADING 2 "How do I set up my email?"
 .PP
 LARBS comes with mutt-wizard, which gives the ability to receive and send all your email and keep an offline store of it all in your terminal, without the need for browser.
 You can add email accounts by running \f(CWmw -a your@email.com\fP.
+See \f(CWman mw\fP for all the information you need about mutt-wizard.
 .PP
 Once you have successfully added your email address(es), you can open your mail with \f(CWneomutt\fP which is also bound to \f(CWMod+e\fP.
-You can sync your mail by pressing \f(CWMod+F8\fP and you can set a cronjob to sync mail every several minutes by running \f(CWmw cron\fP.
+You can sync your mail by pressing \f(CWMod+F8\fP and you can set a cronjob to sync mail every 10 minutes by running \f(CWmw -t 10\fP.
 .PP
 You may also want to install \f(CWpam-gnupg\fP, which can be set up to automatically unlock your GPG key on login, which will allow you avoid having put in a password to sync and send, all while keeping your password safe and encypted on your machine.
 .HEADING 2 "How do I set up my music?"
@@ -386,7 +392,9 @@ LARBS is clones as a git repository under \f(CW~/voidrice\fP and deployed in you
 You can use it as such to fetch, diff and merge changes from the remote repository.
 If you don't want to do that or don't know how to use git, you can actually just rerun the script (as root) and reinstall LARBS and it will automatically update an existing install if you select the same username.
 This will overwrite the original config files though, including changes you made for them, but this is an easier brute force approach that will also install any new dependencies.
-.HEADING 1 "Contact Luke Smith"
+.HEADING 1 "Important Links"
+.PP
+You can follow links via the keyboard in this pdf reader by pressing \f(CWf\fP followed by the number that appears on the desired link.
 .LI
 .ITEM
 .PDF_WWW_LINK "mailto:luke@lukesmith.xyz" "luke@lukesmith.xyz"
