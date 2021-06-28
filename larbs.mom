@@ -388,9 +388,10 @@ Increasing and decreasing the font size in the terminal (st) is bound to \f(CWAl
 First run \f(CWsudo tzupdate\fP to automatically set your timezone based on the geolocation of your IP and then run \f(CWsudo ntpd -qg\fP to manually synchronize your clock with the network. \f(CWsudo hwclock --systohc\fP will write the current software UTC time to the hardware clock.
 .HEADING 2 "How do I update LARBS?"
 .PP
-LARBS is clones as a git repository under \f(CW~/voidrice\fP and deployed in your home directory.
+The config files are cloned as a git repository under \f(CW~/voidrice\fP and deployed in your home directory.
 You can use it as such to fetch, diff and merge changes from the remote repository.
-If you don't want to do that or don't know how to use git, you can actually just rerun the script (as root) and reinstall LARBS and it will automatically update an existing install if you select the same username.
+To see a list of all the deployed config files, run \f(CWgit ls-tree --full-tree -r --name-only HEAD\fP from your home directory.
+You can also just rerun the \f(CWlarbs.sh\fP script (as root) to reinstall LARBS and it will automatically update an existing install if you select the same username.
 This will overwrite the original config files though, including changes you made for them, but this is an easier brute force approach that will also install any new dependencies.
 .HEADING 1 "Important Links"
 .PP
