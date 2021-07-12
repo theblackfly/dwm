@@ -114,7 +114,7 @@ To type capital letters, hold down the \f(CWShift\fP key\(emthat might sound lik
 .ITEM
 \f(CWMod+Shift+Space\fP \(en Make a window float (move and resize with \f(CWMod+\fPleft/right click).
 .ITEM
-\f(CWMod+s\fP \(en Make/unmake a window "sticky" (follows you from tag to tag)
+\f(CWMod+S\fP \(en Make/unmake a window "sticky" (follows you from tag to tag)
 .ITEM
 \f(CWMod+B\fP \(en Toggle statusbar (may also middle click on desktop)
 .ITEM
@@ -126,6 +126,8 @@ To type capital letters, hold down the \f(CWShift\fP key\(emthat might sound lik
 \f(CWMod+t\fP \(en Tiling mode (active by default)
 .ITEM
 \f(CWMod+T\fP \(en Bottom stack mode (just like tiling, but master is on top)
+.ITEM
+\f(CWMod+s\fP \(en Grid mode
 .ITEM
 \f(CWMod+f\fP \(en Fullscreen mode
 .ITEM
