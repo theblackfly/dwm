@@ -100,7 +100,7 @@ To type capital letters, hold down the \f(CWShift\fP key\(emthat might sound lik
 .ITEM
 \f(CWMod+d\fP \(en dmenu (For running commands or programs without shortcuts)
 .ITEM
-\f(CWMod+j/k\fP \(en Cycle thru windows by their stack order
+\f(CWMod+j/k\fP \(en Cycle through windows by their stack order
 .ITEM
 \f(CWMod+Space\fP \(en Make selected window the master (or switch master with 2nd)
 .ITEM
@@ -144,6 +144,10 @@ To type capital letters, hold down the \f(CWShift\fP key\(emthat might sound lik
 \f(CWMod+i\fP \(en Center the master window
 .ITEM
 \f(CWMod+I\fP \(en Center and float the master window
+.ITEM
+\f(CWMod+Ctrl+.\fP \(en Cycle forward through available layouts
+.ITEM
+\f(CWMod+Ctrl+,\fP \(en Cycle backward through available layouts
 .ITEM
 \f(CWMod+o/O\fP \(en Increase/decrease the number of master windows
 .LIST OFF
